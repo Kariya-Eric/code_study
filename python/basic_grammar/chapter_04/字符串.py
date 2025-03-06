@@ -48,3 +48,19 @@ False: 无
 Error: byte数字（单字节）
 """
 print(str.lower(), str.upper(), str.title(), str.islower(), str.isupper(), str.isnumeric(), str.isdigit())
+
+"""
+判断字符串是不是以子串开头,以子串结尾
+"""
+print(str.startswith("l", 3), str.endswith("d"))
+
+"""
+字符串拼接,+号拼接
+h*e*l*l*o* *w*o*r*l*d join在每个字符后都加入*
+"""
+print(str + " kariya", "*".join(str))
+
+"""
+删除左右空格和两端空格 lstrip,rstrip,strip 
+"""
+print(str.lstrip(),str.rstrip(),str.strip())
