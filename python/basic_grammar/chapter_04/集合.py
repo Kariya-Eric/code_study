@@ -16,8 +16,9 @@ set1.remove("h")
 print(set1)
 # 删除不会报错
 set1.discard("hello")
+print(set1)
 # 随机删除集合中的数据并返回
 print(set1.pop())
 set2 = {3, 4, 5, 6, 7, 10}
-# 两个百战集合的并集和交际
+# 两个集合的并集和交际
 print(set1 & set2, set1 | set2)
