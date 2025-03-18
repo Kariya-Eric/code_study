@@ -17,7 +17,11 @@ from modules.my_module import a, name
 a()
 print(name)
 
-from package.my_package import a as my_package_a
+# from package.my_package import a as my_package_a
 
 # a()
-my_package_a()
+# my_package_a()
+
+# from 模板 import *
+from package.my_package import *
+a()
