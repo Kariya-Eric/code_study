@@ -46,3 +46,16 @@ class Cat(Animal):
 
 c1 = Cat("zhangsan", 'cat')
 print(c1)
+
+
+class Classmate:
+    name = "lucy"
+    _age = 20
+    __sex = "F"
+
+
+pr = Classmate()
+print(Classmate.name)
+print(Classmate._age)
+# 强行获取私有属性的方法，对象._类名__私有属性名
+print(pr._Classmate__sex)
