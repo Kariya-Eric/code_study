@@ -25,6 +25,7 @@ t1()
 
 # __dict__查看类和对象中的属性
 print(Test.__dict__)
+# 实例对象中包含的属性和值
 print(t1.__dict__)
 
 
@@ -43,3 +44,31 @@ class Human:
 
 h1 = Human()
 print(h1)
+
+"""
+索引相关模式方法
+getitem() setitem() delitem()
+"""
+
+
+class Student:
+    def __getitem__(self, item):
+        print("getitem", item)
+
+    def __setitem__(self, item, value):
+        print("setitem", item, value)
+
+    def __delitem__(self, key):
+        print("delitem", key)
+
+
+s1 = Student()
+res = s1['name']  # 自动触发__getitem__
+
+s1['name'] = "zhangsan"
+del s1['name']
+
+# 以下不触发
+s1.name = 'lisi'
+print("##", s1.name)
+del s1.name
