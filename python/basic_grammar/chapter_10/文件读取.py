@@ -44,6 +44,9 @@ with open("./data.txt", mode="r", encoding="utf-8") as f:
 
     position = f.tell()
     print("position:", position)
-    #     吧指针位置重新定位到初始位置，第一个0是偏移量，第二个0是指针位置,0开始，1对应当前位置，2对应结尾
+    # 吧指针位置重新定位到初始位置，第一个0是偏移量，第二个0是指针位置,0开始，1对应当前位置，2对应结尾
     position = f.seek(0, 1)
     print("read:", f.read(10))
+
+with open("./data.txt", mode="r",encoding="utf-8") as f:
+    f.readlines()

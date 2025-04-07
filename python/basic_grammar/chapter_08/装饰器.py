@@ -33,6 +33,8 @@ decorator(fn1)(1, 2, 3)
 @decorator
 def service(**kwargs):
     print("核心业务...", kwargs)
+    return "hello"
 
 
-service(name="1", age="2")
+ret = service(name="1", age="2")
+print(f"server: {ret}")
